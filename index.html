@@ -57,11 +57,11 @@
         }
 
         .growing-border {
-            width: 100%; 
-            height: 1px; 
+            width: 100%;
+            height: 1px;
             background: linear-gradient(to right, transparent, #d3d3d3 50%, transparent);
-            margin-top: 20px; 
-          }
+            margin-top: 20px;
+        }
 
         a {
             color: var(--color-link);
@@ -107,15 +107,15 @@
         }
 
         .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 2; 
+            display: none;
+            position: fixed;
+            z-index: 2;
             left: 0;
             top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgba(0,0,0,0.4); 
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
             transition: opacity 0.5s ease;
             opacity: 0;
         }
@@ -123,13 +123,13 @@
         .modal-content {
             position: relative;
             background-color: var(--bg-color-light);
-            margin: 10% auto; 
+            margin: 10% auto;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: all 0.5s ease;
         }
-        
+
         @media (min-width: 1000px) {
             .modal-content {
                 width: 40%;
@@ -171,7 +171,7 @@
             background-color: var(--bg-color-light);
             color: var(--font-color-light);
         }
-        
+
         .modal-content input[type="text"],
         .modal-content input[type="password"],
         .modal-content input[type="email"] {
@@ -181,11 +181,11 @@
             display: inline-block;
             border: 1px solid #eee;
             border-radius: 4px;
-            box-sizing: border-box; 
-            background-color: #fff; 
-            color: #000; 
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #000;
         }
-        
+
         .modal-content input[type="submit"] {
             width: auto;
             padding: 10px 18px;
@@ -198,21 +198,21 @@
             font-size: 16px;
             font-family: 'Roboto', sans-serif;
         }
-        
+
         .modal-content input[type="submit"]:hover {
-            background-color: #1a6fb4; 
+            background-color: #1a6fb4;
         }
-        
+
         body.dark-mode .modal-content {
             background-color: var(--bg-color-dark);
             color: var(--font-color-dark);
         }
-        
+
         body.dark-mode .modal-content input[type="submit"] {
             background-color: #555;
             color: #fff;
         }
-        
+
         body.dark-mode .modal-content input[type="text"],
         body.dark-mode .modal-content input[type="password"],
         body.dark-mode .modal-content input[type="email"] {
@@ -232,43 +232,50 @@
             border-collapse: collapse;
             margin-top: 20px;
         }
-        
+
         td:first-child {
             font-weight: bold;
         }
-        th, td {
+
+        th,
+        td {
             text-align: left;
             padding: 8px;
         }
-        
-        table, th, td {
+
+        table,
+        th,
+        td {
             border: 1px solid #ccc;
         }
-        
+
         th {
             color: var(--color-link);
         }
-        
+
         /*
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }*/
-        
-        body.dark-mode table, body.dark-mode th, body.dark-mode td {
-            border: 1px solid #444; 
+
+        body.dark-mode table,
+        body.dark-mode th,
+        body.dark-mode td {
+            border: 1px solid #444;
         }
-        
+
         body.dark-mode th {
             background-color: #555;
         }
+
         /*
         body.dark-mode tr:nth-child(even) {
             background-color: #3a3a3a;
         }
         */
-        
+
         body.dark-mode th {
-            color: #ddd; 
+            color: #ddd;
         }
     </style>
 </head>
@@ -290,36 +297,45 @@
         <div class="post">
             <h2 class="post__title"><a href="#">🌐 #2: Чому JavaScript - моя улюблена мова програмування</a></h2>
             <p class="post__views">👁️ Переглядів: 456</p>
+            <img src="/img/file2.png" style="    display: block;
+            margin-left: auto;
+            margin-right: auto; width: 0%">
             <p class="post__content">📝 JavaScript - це одна з найпопулярніших мов програмування у світі, і в цьому
                 пості я хочу поділитися, чому вона стала моєю улюбленою. Від гнучкості до підтримки спільноти - ось
                 декілька причин, чому я люблю JavaScript.</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Особливість</th>
-                            <th>Опис</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Гнучкість</td>
-                            <td>JavaScript можна використовувати для розробки фронтенду, бекенду, мобільних додатків та ігор.</td>
-                        </tr>
-                        <tr>
-                            <td>Спільнота</td>
-                            <td>Величезна кількість розробників і бібліотек для будь-якого завдання.</td>
-                        </tr>
-                        <tr>
-                            <td>Інтерактивність</td>
-                            <td>Легко створювати інтерактивні веб-сайти і динамічні веб-додатки.</td>
-                        </tr>
-                        <tr>
-                            <td>Універсальність</td>
-                            <td>Підтримується всіма сучасними веб-браузерами без необхідності використання плагінів.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="post__content">Завдяки цим перевагам, JavaScript стає незамінним інструментом для будь-якого веб-розробника. Його універсальність дозволяє не лише створювати багаті інтерфейси користувача, але й реалізовувати серверну логіку, працювати з базами даних, а також розробляти мобільні та десктопні додатки. Можливість використання JavaScript на всіх етапах розробки проекту сприяє більшій ефективності та спрощенню процесу розробки, роблячи його вибором номер один для багатьох компаній та індивідуальних розробників по всьому світу.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Особливість</th>
+                        <th>Опис</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Гнучкість</td>
+                        <td>JavaScript можна використовувати для розробки фронтенду, бекенду, мобільних додатків та
+                            ігор.</td>
+                    </tr>
+                    <tr>
+                        <td>Спільнота</td>
+                        <td>Величезна кількість розробників і бібліотек для будь-якого завдання.</td>
+                    </tr>
+                    <tr>
+                        <td>Інтерактивність</td>
+                        <td>Легко створювати інтерактивні веб-сайти і динамічні веб-додатки.</td>
+                    </tr>
+                    <tr>
+                        <td>Універсальність</td>
+                        <td>Підтримується всіма сучасними веб-браузерами без необхідності використання плагінів.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="post__content">Завдяки цим перевагам, JavaScript стає незамінним інструментом для будь-якого
+                веб-розробника. Його універсальність дозволяє не лише створювати багаті інтерфейси користувача, але й
+                реалізовувати серверну логіку, працювати з базами даних, а також розробляти мобільні та десктопні
+                додатки. Можливість використання JavaScript на всіх етапах розробки проекту сприяє більшій ефективності
+                та спрощенню процесу розробки, роблячи його вибором номер один для багатьох компаній та індивідуальних
+                розробників по всьому світу.</p>
 
         </div>
         <div class="growing-border"></div>
@@ -327,6 +343,9 @@
         <div class="post">
             <h2 class="post__title"><a href="#">🌐 #3: Як я став веб-розробником</a></h2>
             <p class="post__views">👁️ Переглядів: 456</p>
+            <img src="/img/file1.jpeg" style="    display: block;
+            margin-left: auto;
+            margin-right: auto;">
             <p class="post__content">📝 Шлях до становлення веб-розробником може бути різним для кожного. У цьому пості
                 я хочу поділитися своїм особистим досвідом і розповісти, як я став веб-розробником. Сподіваюсь, моя
                 історія надихне вас на нові звершення!</p>
@@ -407,25 +426,25 @@
         });
 
         // Скрипт для відкриття та закриття модального вікна
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var modal = document.getElementById("loginModal");
             var btn = document.getElementById("loginLink");
             var span = document.getElementsByClassName("close-button")[0];
-        
-            btn.onclick = function() {
+
+            btn.onclick = function () {
                 modal.style.display = "block";
-                setTimeout(function() { modal.style.opacity = 1; }, 10);
+                setTimeout(function () { modal.style.opacity = 1; }, 10);
             }
-        
-            span.onclick = function() {
+
+            span.onclick = function () {
                 modal.style.opacity = 0;
-                setTimeout(function() { modal.style.display = "none"; }, 500); 
+                setTimeout(function () { modal.style.display = "none"; }, 500);
             }
-        
-            window.onclick = function(event) {
+
+            window.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.opacity = 0;
-                    setTimeout(function() { modal.style.display = "none"; }, 500); 
+                    setTimeout(function () { modal.style.display = "none"; }, 500);
                 }
             }
         });
