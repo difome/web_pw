@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
-    background-color: #121212; /* Темний фон для всієї сторінки */
-    color: #e0e0e0; /* Світлий текст */
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 a {
@@ -12,26 +12,22 @@ a {
 
 a:hover {
     transition: color 0.3s ease; 
-    transition: filter 0.3s ease; /* Плавна зміна фільтра */
-
+    transition: filter 0.3s ease;
 }
 
 .header__container {
-    max-width: 1200px; /* Ширина контейнера */
-    margin: 0 auto; /* Центрування контейнера */
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px !important;
 }
 
-
 .header__links {
     display: flex;
     gap: 20px;
 }
-
-
 
 .header__link {
     color: #bbb;
@@ -42,14 +38,13 @@ a:hover {
 }
 
 .header__link:hover {
-    filter: brightness(120%); /* Зробити колір тексту на 30% темнішим */
+    filter: brightness(120%);
 }
 
 .header__logo {
-    font-size: 32px; /* Увеличенный размер для логотипа */
+    font-size: 32px;
     font-weight: bold;
-    color: #6ee38e; /* Цвет логотипа */
-    /* margin-top: 8px; */
+    color: #6ee38e;
 }
 
 .header__middle {
@@ -57,36 +52,30 @@ a:hover {
 }
 
 .header__logo-link {
-    text-decoration: none; /* Видаляємо підкреслення посилання */
-    color: #000; /* Колір тексту логотипу */
+    text-decoration: none;
+    color: #000;
     display: flex;
     align-items: center;
 }
 
 .header__logo-link:hover {
-    filter: brightness(120%); /* Зробити колір тексту на 30% темнішим */
-
+    filter: brightness(120%);
 }
 
 .header__phones {
     display: flex;
-    flex-direction: column; /* Розташує номери телефонів вертикально один під одним */
+    flex-direction: column;
 }
 
 .header__phone {
-    margin-top: 5px; /* Збільшуємо відступ між номерами телефонів */
+    margin-top: 5px;
     color: #ededed;
     font-size: 15px;
 }
 
 .header__link:hover {
-    filter: brightness(120%); /* Зробити колір тексту на 20% світлішим при наведенні */
+    filter: brightness(120%);
 }
-
-.header__link:hover {
-    filter: brightness(120%); /* Зробити колір тексту на 20% світлішим при наведенні */
-}
-
 
 .header__cart {
     margin-left: auto;
@@ -97,7 +86,6 @@ a:hover {
     align-items: center;
     text-decoration: none;
     color: #cfcfcf;
-
     font-size: 15px;
 }
 
@@ -115,15 +103,14 @@ a:hover {
 }
 
 header {
-    background-color: #333; /* Темний фон для заголовка */
+    background-color: #333;
     color: #fff;
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Темна тінь */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-
 
 @media (max-width: 767px) {
     .header__top {
@@ -139,27 +126,27 @@ header {
     }
 
     .header__links {
-        display: flex; /* Показываем ссылки при малых размерах экрана */
+        display: flex;
     }
 
     .header__link {
-        margin: 0; /* Убираем отступы для ссылок на мобильных устройствах */
+        margin: 0;
         font-size: 14px;
     }
 
     .header__logo {
-        font-size: 24px; /* Уменьшаем размер логотипа на мобильных устройствах */
+        font-size: 24px;
     }
 
     .header__cart-link {
-        margin-right: 20px; /* Добавляем отступ справа для ссылки корзины */
+        margin-right: 20px;
         font-size: 14px;
     }
 }
 
 .container {
-    max-width: 1200px; /* Ширина контейнера */
-    margin: 0 auto; /* Центрування контейнера */
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -168,10 +155,10 @@ header {
 
 .sidebar {
     flex-basis: 100%;
-    background-color: #242424; /* Темний фон для сайдбару */
+    background-color: #242424;
     padding: 10px;
     border-radius: 8px;
-    margin-bottom: 20px; /* Відступ знизу для мобільних */
+    margin-bottom: 20px;
 }
 
 .sidebar ul {
@@ -182,8 +169,8 @@ header {
 .sidebar li {
     margin-bottom: 10px;
     font-weight: 500;
-    color: #b0b0b0; /* Світліший текст для сайдбару */
-    font-size: 14px; /* Менший розмір тексту */
+    color: #b0b0b0;
+    font-size: 14px;
 }
 
 .sidebar h3 {
@@ -193,49 +180,39 @@ header {
 
 .category-item {
     display: flex;
-    align-items: center; /* Вирівнювання елементів категорій по центру за вертикаллю */
-    justify-content: center; /* Вирівнювання елементів категорій по центру за горизонталлю */
-    margin-bottom: 10px; /* Відступ між категоріями */
-    font-size: 18px; /* Розмір шрифту для тексту категорій */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .emoji {
-    font-size: 24px; /* Збільшений розмір іконок (емоджі) */
-    margin-right: 8px; /* Відступ між іконкою та текстом */
+    font-size: 24px;
+    margin-right: 8px;
 }
 
 .categories {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Розподіл категорій по ширині з рівними відступами */
+    justify-content: space-around;
     padding: 20px;
 }
 
 .categories__item {
     display: flex;
-    align-items: center; /* Вирівнювання елементів по вертикалі */
-    justify-content: center; /* Вирівнювання елементів по горизонталі */
-    margin: 10px 0; /* Відступи між категоріями */
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 .categories__emoji {
-    font-size: 24px; /* Великий розмір емоджі */
-    margin-right: 10px; /* Відступ між емоджі та текстом */
+    font-size: 24px;
+    margin-right: 10px;
 }
 
 .categories__text {
-    font-size: 16px; /* Розмір тексту */
+    font-size: 16px;
 }
-
-
-
-/* .main {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-} */
-
 
 .section h2 {
     font-size: 24px;
@@ -314,7 +291,6 @@ header {
     font-weight: bold;
     margin-top: 15px;
     color: #6ee38e;
-
 }
 
 .product-link {
@@ -324,16 +300,6 @@ header {
 .product-title-link {
     position: relative;
     z-index: 1;
-}
-
-.product-title-link::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
 }
 
 .book-icon::before {
@@ -361,10 +327,9 @@ header {
     margin-bottom: -10px;
 }
 
-
 @media (max-width: 767px) {
     .product-wrapper {
-        grid-template-columns: repeat(1, 1fr); /* Один столбец */
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .product {
@@ -385,13 +350,10 @@ header {
     }
 }
 
-
-
 footer {
     font-size: 14px;
     color: #b0b0b0; 
 }
-
 
 .categories {
     display: flex;
@@ -406,27 +368,21 @@ footer {
     justify-content: center;
     margin: 10px;
     font-size: 15px;
-    padding-right: 20px; /* Відступ справа для границі */
-    position: relative; /* Для абсолютного позиціонування псевдоелементів */
-    text-decoration: none; /* Видаляємо підкреслення посилання */
-    color: #e0e0e0; /* Колір тексту */
+    padding-right: 20px; 
+    position: relative; 
+    text-decoration: none; 
+    color: #e0e0e0; 
 }
 
-
-
 .categories__item:hover {
-    background-color: #333; /* Колір фону при наведенні */
-    border-radius: 4px; /* Закруглення кутів */
+    background-color: #333; 
+    border-radius: 4px; 
 }
 
 .categories__emoji {
     font-size: 24px;
     margin-right: 10px;
 }
-
-
-
-
 
 .footer__nav {
     font-size: 0;
@@ -447,7 +403,6 @@ footer {
     display: block;
     height: 100%;
     padding: 5px 0;
-    -webkit-transition: color .4s ease-out;
     transition: color .4s ease-out;
     color: #fff;
     font-weight: 500;
@@ -531,7 +486,6 @@ footer {
 .social__elem {
     font-size: 25px;
     margin-right: 1px;
-    -webkit-transition: color .25s ease-out;
     transition: color .25s ease-out;
     text-align: center;
     color: #b4b4b4;
@@ -542,3 +496,4 @@ footer {
     padding: 25px 0;
     text-align: center;
 }
+
