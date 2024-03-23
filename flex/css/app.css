@@ -1,0 +1,544 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #121212; /* Темний фон для всієї сторінки */
+    color: #e0e0e0; /* Світлий текст */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transition: color 0.3s ease; 
+    transition: filter 0.3s ease; /* Плавна зміна фільтра */
+
+}
+
+.header__container {
+    max-width: 1200px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрування контейнера */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px !important;
+}
+
+
+.header__links {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.header__link {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0px 25px 0px 0px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.header__link:hover {
+    filter: brightness(120%); /* Зробити колір тексту на 30% темнішим */
+}
+
+.header__logo {
+    font-size: 32px; /* Увеличенный размер для логотипа */
+    font-weight: bold;
+    color: #6ee38e; /* Цвет логотипа */
+    /* margin-top: 8px; */
+}
+
+.header__middle {
+    margin-top: 12px;
+}
+
+.header__logo-link {
+    text-decoration: none; /* Видаляємо підкреслення посилання */
+    color: #000; /* Колір тексту логотипу */
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-link:hover {
+    filter: brightness(120%); /* Зробити колір тексту на 30% темнішим */
+
+}
+
+.header__phones {
+    display: flex;
+    flex-direction: column; /* Розташує номери телефонів вертикально один під одним */
+}
+
+.header__phone {
+    margin-top: 5px; /* Збільшуємо відступ між номерами телефонів */
+    color: #ededed;
+    font-size: 15px;
+}
+
+.header__link:hover {
+    filter: brightness(120%); /* Зробити колір тексту на 20% світлішим при наведенні */
+}
+
+.header__link:hover {
+    filter: brightness(120%); /* Зробити колір тексту на 20% світлішим при наведенні */
+}
+
+
+.header__cart {
+    margin-left: auto;
+}
+
+.header__cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #cfcfcf;
+
+    font-size: 15px;
+}
+
+.header__cart-icon {
+    font-size: 24px;
+}
+
+.header__cart-counter {
+    margin-left: 5px;
+    background-color: #ff6347;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+header {
+    background-color: #333; /* Темний фон для заголовка */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Темна тінь */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+@media (max-width: 767px) {
+    .header__top {
+        padding: 5px;
+    }
+    .header__emoji {
+        display: none;
+    }
+    .header__middle {
+        padding: 5px;
+        margin: 0px;
+        margin-bottom: -15px;
+    }
+
+    .header__links {
+        display: flex; /* Показываем ссылки при малых размерах экрана */
+    }
+
+    .header__link {
+        margin: 0; /* Убираем отступы для ссылок на мобильных устройствах */
+        font-size: 14px;
+    }
+
+    .header__logo {
+        font-size: 24px; /* Уменьшаем размер логотипа на мобильных устройствах */
+    }
+
+    .header__cart-link {
+        margin-right: 20px; /* Добавляем отступ справа для ссылки корзины */
+        font-size: 14px;
+    }
+}
+
+.container {
+    max-width: 1200px; /* Ширина контейнера */
+    margin: 0 auto; /* Центрування контейнера */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar {
+    flex-basis: 100%;
+    background-color: #242424; /* Темний фон для сайдбару */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Відступ знизу для мобільних */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #b0b0b0; /* Світліший текст для сайдбару */
+    font-size: 14px; /* Менший розмір тексту */
+}
+
+.sidebar h3 {
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.category-item {
+    display: flex;
+    align-items: center; /* Вирівнювання елементів категорій по центру за вертикаллю */
+    justify-content: center; /* Вирівнювання елементів категорій по центру за горизонталлю */
+    margin-bottom: 10px; /* Відступ між категоріями */
+    font-size: 18px; /* Розмір шрифту для тексту категорій */
+}
+
+.emoji {
+    font-size: 24px; /* Збільшений розмір іконок (емоджі) */
+    margin-right: 8px; /* Відступ між іконкою та текстом */
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Розподіл категорій по ширині з рівними відступами */
+    padding: 20px;
+}
+
+.categories__item {
+    display: flex;
+    align-items: center; /* Вирівнювання елементів по вертикалі */
+    justify-content: center; /* Вирівнювання елементів по горизонталі */
+    margin: 10px 0; /* Відступи між категоріями */
+}
+
+.categories__emoji {
+    font-size: 24px; /* Великий розмір емоджі */
+    margin-right: 10px; /* Відступ між емоджі та текстом */
+}
+
+.categories__text {
+    font-size: 16px; /* Розмір тексту */
+}
+
+
+
+/* .main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+} */
+
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.section h2::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: #2a2a2afd;
+    margin-left: 20px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.product-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #242424;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product:hover {
+    background-color: #333333;
+}
+
+.product .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.product .year,
+.product .promo,
+.product .price {
+    color: #e0e0e0;
+}
+
+.product .promo {
+    position: absolute;
+    right: -12px;
+    background: #475eff;
+    color: #fff;
+    padding: 5px 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    z-index: 2;
+    top: -12px;
+    font-size: 14px;
+}
+
+.product .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #6ee38e;
+
+}
+
+.product-link {
+    text-decoration: none;
+}
+
+.product-title-link {
+    position: relative;
+    z-index: 1;
+}
+
+.product-title-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.book-icon::before {
+    content: "📚";
+    margin-right: 5px;
+}
+
+.toy-icon::before {
+    content: "🧸";
+    margin-right: 5px;
+}
+
+.tech-icon::before {
+    content: "🔧";
+    margin-right: 5px;
+}
+
+.product .crossed-italic-text {
+    position: relative;
+    text-decoration: line-through;
+    font-style: italic;
+    color: #6c6c6c;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+
+@media (max-width: 767px) {
+    .product-wrapper {
+        grid-template-columns: repeat(1, 1fr); /* Один столбец */
+    }
+
+    .product {
+        padding: 15px;
+    }
+
+    .product .title {
+        font-size: 16px;
+    }
+
+    .product .price {
+        font-size: 14px;
+    }
+
+    .product .promo {
+        right: 0;
+        top: 0;
+    }
+}
+
+
+
+footer {
+    font-size: 14px;
+    color: #b0b0b0; 
+}
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.categories__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 15px;
+    padding-right: 20px; /* Відступ справа для границі */
+    position: relative; /* Для абсолютного позиціонування псевдоелементів */
+    text-decoration: none; /* Видаляємо підкреслення посилання */
+    color: #e0e0e0; /* Колір тексту */
+}
+
+
+
+.categories__item:hover {
+    background-color: #333; /* Колір фону при наведенні */
+    border-radius: 4px; /* Закруглення кутів */
+}
+
+.categories__emoji {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.footer__nav {
+    font-size: 0;
+    margin: 0;
+    padding: 50px 0 0;
+    list-style: none;
+}
+
+.footer__nav-item {
+    display: inline-block;
+    font-size: 18px;
+    width: 33%;
+    vertical-align: top;
+    color: #fff;
+}
+
+.footer__nav-link {
+    display: block;
+    height: 100%;
+    padding: 5px 0;
+    -webkit-transition: color .4s ease-out;
+    transition: color .4s ease-out;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer__socials {
+    padding-top: 55px;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer .social__title {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.icon-facebook::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/flex/img/facebook.png');
+    background-repeat: no-repeat;
+}
+
+.icon-instagram::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/flex/img/instagram.png');
+    background-repeat: no-repeat;
+}
+
+.icon-tiktok::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/flex/img/tik-tok.png');
+    background-repeat: no-repeat;
+}
+
+.icon-telegram::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/flex/img/telegram.png');
+    background-repeat: no-repeat;
+}
+
+.icon-youtube::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/flex/img/youtube.png');
+    background-repeat: no-repeat;
+}
+
+.footer .social__elem {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #e8e8e8;
+}
+
+.footer .social__elem:not(:last-child) {
+    margin-right: 5%;
+}
+
+.social__elem {
+    font-size: 25px;
+    margin-right: 1px;
+    -webkit-transition: color .25s ease-out;
+    transition: color .25s ease-out;
+    text-align: center;
+    color: #b4b4b4;
+}
+
+.footer__copyright {
+    font-size: 15px;
+    padding: 25px 0;
+    text-align: center;
+}

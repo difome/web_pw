@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title> Кни22г</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+    <div id="loadingBar" style="width: 0%; height: 4px; background-color: #4CAF50; position: fixed; top: 0; left: 0; z-index: 1000; transition: width 0.4s ease;"></div>
+
+    <header>
+        <div class="container">
+            <nav class="header-links">
+                <a href="popular.html">🔥 Популярні</a>
+
+                <a href="#">🆕Новинки</a>
+                <a href="#">Про нас</a>
+                <a href="#">Контакти</a>
+                <a href="#">Доставка і оплата</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Категорії 📚</h3>
+
+            <div class="categories">
+                <a href="#classics" class="categories__item">
+                    <span class="categories__emoji">📚</span>
+                    <span class="categories__text">Класика</span>
+                </a>
+                <a href="#sci-fi" class="categories__item">
+                    <span class="categories__emoji">👽</span>
+                    <span class="categories__text">Наукова фантастика</span>
+                </a>
+                <a href="#fantasy" class="categories__item">
+                    <span class="categories__emoji">🧙‍♂️</span>
+                    <span class="categories__text">Фентезі</span>
+                </a>
+                <a href="#mystery" class="categories__item">
+                    <span class="categories__emoji">🕵️‍♂️</span>
+                    <span class="categories__text">Детективи</span>
+                </a>
+                <a href="#history" class="categories__item">
+                    <span class="categories__emoji">🏰</span>
+                    <span class="categories__text">Історичні</span>
+                </a>
+                <a href="#biography" class="categories__item">
+                    <span class="categories__emoji">👤</span>
+                    <span class="categories__text">Біографії</span>
+                </a>
+                <a href="#poetry" class="categories__item">
+                    <span class="categories__emoji">✍️</span>
+                    <span class="categories__text">Поезія</span>
+                </a>
+                <a href="#children" class="categories__item">
+                    <span class="categories__emoji">👶</span>
+                    <span class="categories__text">Для дітей</span>
+                </a>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="card" data-id="📖1">
+                <div class="title">
+                    <a href="#book/getBook/1" class="card-title-link">"1984" Джордж Орвелл 📚</a>
+                </div>
+                <div class="year">Видано: 1949 рік</div>
+                <div class="promo">Класика!</div>
+                <div class="price">350 ₴</div>
+            </div>
+            <div class="card" data-id="📖2">
+                <div class="title">
+                    <a href="#book/getBook/2" class="card-title-link">"Атлант розправив плечі" Айн Ренд 🚀</a>
+                </div>
+                <div class="year">Видано: 1957 рік</div>
+                <div class="promo">Філософія і пригоди!</div>
+                <div class="price">450 ₴</div>
+            </div>
+            <div class="card" data-id="📖3">
+                <div class="title">
+                    <a href="#book/getBook/3" class="card-title-link">"Лісова Пісня" Леся Українка 🌲</a>
+                </div>
+                <div class="year">Видано: 1912 рік</div>
+                <div class="promo">Українська класика!</div>
+                <div class="price">300 ₴</div>
+            </div>
+            <div class="card" data-id="📖4">
+                <div class="title">
+                    <a href="#book/getBook/4" class="card-title-link">"Фауст" Йоганн Вольфганг фон Гете 🎭</a>
+                </div>
+                <div class="year">Видано: 1808 рік</div>
+                <div class="price">400 ₴</div>
+            </div>
+            <div class="card" data-id="📖5">
+                <div class="title">
+                    <a href="#book/getBook/5" class="card-title-link">"Іліада" Гомер ⚔️</a>
+                </div>
+                <div class="year">Видано: 8 століття до н. е.</div>
+                <div class="price">250 ₴</div>
+            </div>
+            <div class="card" data-id="📖6">
+                <div class="title">
+                    <a href="#book/getBook/6" class="card-title-link">"Аліса в Країні чудес" Льюїс Керрол 🐰</a>
+                </div>
+                <div class="year">Видано: 1865 рік</div>
+                <div class="promo">Для дітей і дорослих!</div>
+                <div class="price">280 ₴</div>
+            </div>
+        </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.nav-link').forEach(function(link) {
+                    link.addEventListener('click', function(e) {
+                        // Тут можна додати додаткову логіку
+                        console.log('Перехід за адресою: ' + this.getAttribute('href'));
+            
+                        // Не потрібно викликати e.preventDefault(), щоб дозволити стандартній поведінці браузера перейти за адресою href
+                    });
+                });
+            });
+
+            // Функція для "запуску" полоси завантаження
+function startLoading() {
+    document.getElementById('loadingBar').style.width = "100%";
+}
+
+// Функція для "завершення" полоси завантаження
+function finishLoading() {
+    document.getElementById('loadingBar').style.width = "0";
+}
+
+// Додаємо обробник події на всі посилання
+document.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        // Запускаємо полосу завантаження
+        startLoading();
+        
+        // Імітація завантаження (можна видалити, якщо існує реальна логіка завантаження)
+        setTimeout(finishLoading, 1000); // 1 секунда для демонстрації
+    });
+});
+
+// Додайте виклик finishLoading() у ваші AJAX-запити або на подію window.onload для реальних сценаріїв
+window.onload = finishLoading;
+            </script>
+</body>
+
+</html>
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>Стильний Магазин Книг</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container header__container">
+                <nav class="header__links">
+                    <a href="#" class="header__link"><span class="header__emoji">🆕</span> Новинки</a>
+                    <a href="popular.html" class="header__link"><span class="header__emoji">🔥</span> ТОП книг</a>
+                    <a href="#" class="header__link"><span class="header__emoji">ℹ️</span> Про нас</a>
+                    <a href="#" class="header__link"><span class="header__emoji">📞</span> Контакти</a>
+                    <a href="#" class="header__link"><span class="header__emoji">🚚</span> Доставка і оплата</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__middle">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo-link">
+                        <div class="header__logo">эКнига</div>
+                    </a>
+                </div>
+                <div class="header__cart">
+                    <a href="cart.html" class="header__cart-link">
+                        <span class="header__cart-icon">🛒</span>
+                        <span class="header__cart-text">Корзина</span>
+                        <span class="header__cart-counter">5</span>
+                    </a>
+                </div>
+                <!-- <div class="header__phones">
+                    <a class="header__phone" href="tel:380997230409">+380 99 999 04 09</a>
+                    <a class="header__phone" href="tel:380997230409">+380 99 999 03 09</a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Категорії 📚</h3>
+
+
+        <aside class="sidebar">
+
+            <div class="categories">
+                <a href="#classics" class="categories__item">
+                    <span class="categories__emoji">📚</span>
+                    <span class="categories__text">Класика</span>
+                </a>
+                <a href="#sci-fi" class="categories__item">
+                    <span class="categories__emoji">👽</span>
+                    <span class="categories__text">Наукова фантастика</span>
+                </a>
+                <a href="#fantasy" class="categories__item">
+                    <span class="categories__emoji">🧙‍♂️</span>
+                    <span class="categories__text">Фентезі</span>
+                </a>
+                <a href="#mystery" class="categories__item">
+                    <span class="categories__emoji">🕵️‍♂️</span>
+                    <span class="categories__text">Детективи</span>
+                </a>
+                <a href="#history" class="categories__item">
+                    <span class="categories__emoji">🏰</span>
+                    <span class="categories__text">Історичні</span>
+                </a>
+                <a href="#biography" class="categories__item">
+                    <span class="categories__emoji">👤</span>
+                    <span class="categories__text">Біографії</span>
+                </a>
+                <a href="#poetry" class="categories__item">
+                    <span class="categories__emoji">✍️</span>
+                    <span class="categories__text">Поезія</span>
+                </a>
+                <a href="#children" class="categories__item">
+                    <span class="categories__emoji">👶</span>
+                    <span class="categories__text">Для дітей</span>
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <div class="main">
+        <section class="section">
+            <h2>🔥 ТОП книг</h2>
+            <div class="product-wrapper">
+                <div class="product" data-id="1">
+                    <a href="book.html?bookId=1" class="product-link">
+                        <div class="title book-icon">
+                            "1984" Джордж Орвелл
+                        </div>
+                    </a>
+                    <div class="year">Видано: 1949 рік</div>
+                    <div class="promo">Класика!</div>
+                    <div class="old-price crossed-italic-text">520 ₴</div>
+                    <div class="price">350 ₴</div>
+                </div>
+                <div class="product" data-id="2">
+                    <a href="book.html?bookId=2" class="product-link">
+                        <div class="title book-icon">
+                            "Атлант розправив плечі" Айн Ренд
+                        </div>
+                    </a>
+                    <div class="year">Видано: 1957 рік</div>
+                    <div class="promo">Філософія і пригоди!</div>
+                    <div class="price">450 ₴</div>
+                </div>
+                <div class="product" data-id="3">
+                    <a href="book.html?bookId=3" class="product-link">
+                        <div class="title book-icon">
+                            "Майстер і Маргарита" Михайло Булгаков
+                        </div>
+                    </a>
+                    <div class="year">Видано: 1966 рік</div>
+                    <div class="promo">Сатира і фантастика!</div>
+                    <div class="price">420 ₴</div>
+                </div>
+                <div class="product" data-id="4">
+                    <a href="book.html?bookId=4" class="product-link">
+                        <div class="title book-icon">
+                            "Гаррі Поттер і філософський камінь" Джоан Роулінг
+                        </div>
+                    </a>
+                    <div class="year">Видано: 1997 рік</div>
+                    <div class="promo">Фентезі!</div>
+                    <div class="price">380 ₴</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🆕 Новинки книг</h2>
+            <div class="product-wrapper">
+                <div class="product" data-id="7">
+                    <a href="book.html?bookId=7" class="product-link">
+                        <div class="title book-icon">
+                            "Таємниця старого мосту" Марк Твен
+                        </div>
+                    </a>
+                    <div class="year">Видано: 1883 рік</div>
+                    <div class="promo">Пригодницький роман</div>
+                    <div class="price">280 ₴</div>
+                </div>
+                <div class="product" data-id="8">
+                    <a href="book.html?bookId=8" class="product-link">
+                        <div class="title book-icon">
+                            "Тінь вітру" Карлос Руїс Сафон
+                        </div>
+                    </a>
+                    <div class="year">Видано: 2001 рік</div>
+                    <div class="promo">Містика і драма</div>
+                    <div class="price">420 ₴</div>
+                </div>
+
+                <div class="product" data-id="3">
+                    <a href="book.html?bookId=3" class="product-link">
+                        <div class="title book-icon">
+                            "Лісова Пісня" Леся Українка
+                        </div>
+                    </a>
+                    <div class="year">Видано: 1912 рік</div>
+                    <div class="promo">Українська класика!</div>
+                    <div class="price">300 ₴</div>
+                </div>
+                <div class="product" data-id="4">
+                    <a href="book.html?bookId=4" class="product-link">
+                        <div class="title book-icon">
+                            "Фауст" Йоганн Вольфганг фон Гете
+                        </div>
+                    </a>
+                    <div class="year">Видано: 1808 рік</div>
+                    <div class="old-price crossed-italic-text">450 ₴</div>
+                    <div class="price">400 ₴</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="/about-us/" class="footer__nav-link">Про нас</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/contacts/" class="footer__nav-link">Книгарні</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/calendar/" class="footer__nav-link">Календар подій</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/terms_of_use/" class="footer__nav-link">Умови використання сайту</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/delivery_payment/" class="footer__nav-link">Доставка і оплата</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/partners/" class="footer__nav-link">Партнери</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/dohovir/" class="footer__nav-link">Публічний договір (оферта)</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/povernennya-tovaru/" class="footer__nav-link">Повернення товару</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="javascript:void(0);" class="footer__nav-link" data-target="#feedback-form"
+                            data-toggle="modal">Зворотний зв'язок</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="javascript:void(0);" class="footer__nav-link" data-target="#problems-form"
+                            data-toggle="modal">Складнощі із замовленням</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/loyalty/" class="footer__nav-link">Програма лояльності</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/projects/" class="footer__nav-link">Проєкти</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/contacts/" class="footer__nav-link">Контакти</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/sitemap/" class="footer__nav-link">Карта сайту</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/ye-club/" class="footer__nav-link">Клуб любителів книжки</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="/reading-club/" class="footer__nav-link">Читацький клуб</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__socials">
+                <div class="footer-socials__heading">
+                </div>
+                <div class="social">
+                    <div class="social__title">
+                        Ми у соц.мережах </div>
+                    <a rel="nofollow" target="_blank" href="#" title="Youtube" class="foot social__elem icon-youtube">
+
+                    </a>
+                    <a rel="nofollow" target="_blank" href="#" title="Facebook"
+                        class="foot social__elem icon-facebook"></a>
+                    <a rel="nofollow" target="_blank" href="#" title="Telegram"
+                        class="foot social__elem icon-telegram"></a>
+                    <a rel="nofollow" target="_blank" href="#" title="Instagram"
+                        class="foot social__elem social__elem-inst icon-instagram"></a>
+                    <a rel="nofollow" target="_blank" href="#" title="TikTok"
+                        class="foot social__elem social__elem-tiktok"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__copyright">
+				©2024			
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
